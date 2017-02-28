@@ -6,6 +6,12 @@
 			width: 100%;
 			height: 100%;
 		}
+
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+
 	</style>
 </head>
 <body>
@@ -64,8 +70,8 @@
 				this.info.velocity.y = this.info.velocity.y * -1;
 			}
 
-			this.info.cx = this.info.cx + this.info.velocity.x*time;
-			this.info.cy = this.info.cy + this.info.velocity.y*time;
+			this.info.cx = this.info.cx + this.info.velocity.x * time;
+			this.info.cy = this.info.cy + this.info.velocity.y * time;
 
 			el.setAttribute("cx", this.info.cx);
 			el.setAttribute("cy", this.info.cy);
